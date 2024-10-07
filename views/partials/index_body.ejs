@@ -1,0 +1,151 @@
+<!-- Search input above the content -->
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form class="d-flex">
+                <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn search-btn" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Welcome Section with Background Image -->
+<div class="welcome-section">
+    <div class="welcome-overlay"></div>
+    <div class="welcome-content">
+        <h1>Welcome to AFGP e-Commerce</h1>
+        <p>Good Quality Products</p>
+        <a href="#" class="btn btn-shop">Shop Now</a>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="false">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center mb-4 mt-2">
+                    <h2 class="modal-title" id="loginModalLabel">Login</h2>
+                </div>
+                <form id="loginForm" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary w-50 ">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>Don't have an account? <a href="#" id="signUpLink">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="signUpModalLabel">Sign Up</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="signUpForm" action="/signup" method="POST">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="first_name" placeholder="John" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Doe" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailSignUp" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailSignUp" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="passwordSignUp" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="passwordSignUp" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" name="phone_number" placeholder="123-456-7890">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="123 Main St">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary w-50">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Drug Types Carousel -->
+<div class="container drug-carousel">
+    <div id="drugCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="drug-item">
+                        <img src="https://www.imperial.ac.uk/news/image/mainnews2012/30300.jpg" alt="Antibiotics" class="drug-image">
+                        <h5>Antibiotics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://www.lahacienda.com/wp-content/uploads/2021/11/examples-of-analgesic-drugs-la-hacienda.jpg" alt="Analgesics" class="drug-image">
+                        <h5>Analgesics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://cdn.britannica.com/50/123550-050-885369B3/Prozac-pills.jpg" alt="Antidepressants" class="drug-image">
+                        <h5>Antidepressants</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Antihistamines" class="drug-image">
+                        <h5>Antihistamines</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Antipyretics" class="drug-image">
+                        <h5>Antipyretics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Stimulants" class="drug-image">
+                        <h5>Stimulants</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Antipsychotics" class="drug-image">
+                        <h5>Antipsychotics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Corticosteroids" class="drug-image">
+                        <h5>Corticosteroids</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#drugCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#drugCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
