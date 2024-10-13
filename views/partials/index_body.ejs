@@ -1,0 +1,81 @@
+<title>AFGP e-Commerce</title>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form class="d-flex">
+                <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn search-btn" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="welcome-section">
+    <div class="welcome-overlay"></div>
+    <div class="welcome-content">
+        <h1>Welcome to AFGP e-Commerce</h1>
+        <p>Good Quality Products</p>
+        <% if (user) { %>
+            <a href="/shop" class="btn btn-shop">Shop Now</a>
+        <% } else { %>
+        <% } %>
+    </div>
+</div>
+
+<div class="container drug-carousel">
+    <div id="drugCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="drug-item">
+                        <img src="https://www.imperial.ac.uk/news/image/mainnews2012/30300.jpg" alt="Antibiotics" class="drug-image">
+                        <h5>Antibiotics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://www.lahacienda.com/wp-content/uploads/2021/11/examples-of-analgesic-drugs-la-hacienda.jpg" alt="Analgesics" class="drug-image">
+                        <h5>Analgesics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://cdn.britannica.com/50/123550-050-885369B3/Prozac-pills.jpg" alt="Antidepressants" class="drug-image">
+                        <h5>Antidepressants</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Antihistamines" class="drug-image">
+                        <h5>Antihistamines</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Antipyretics" class="drug-image">
+                        <h5>Antipyretics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Stimulants" class="drug-image">
+                        <h5>Stimulants</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Antipsychotics" class="drug-image">
+                        <h5>Antipsychotics</h5>
+                    </div>
+                    <div class="drug-item">
+                        <img src="https://via.placeholder.com/150" alt="Corticosteroids" class="drug-image">
+                        <h5>Corticosteroids</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#drugCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#drugCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
