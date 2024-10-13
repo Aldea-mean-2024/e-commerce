@@ -1,0 +1,22 @@
+ <title>Product List</title>
+
+<div class="container mt-5 product-container">
+  <button class="btn btn-primary add-product-btn" data-toggle="modal" data-target="#addProductModal">
+    <i class="fas fa-cart-plus"></i> Add Product
+  </button>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Product Name</h5>
+          <p class="card-text">Price: $29.99</p>
+          <p class="card-text">Quantity: 10</p>
+          <p class="card-text">This is a short description of the product.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('modal/addproduct') %>
