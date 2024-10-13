@@ -1,0 +1,42 @@
+<title>Accounts</title>
+<div class="container mt-5" id="user-list-container">
+    <h3 class="mb-3">Total Users: <span class="badge bg-primary" style="border-radius: 10px;"><%= users.length %></span></h3>
+
+    <div class="d-flex justify-content-between mb-3">
+        <select class="form-select" id="sort-dropdown" style="width: auto;">
+            <option value="asc">Sort by Name (A-Z)</option>
+            <option value="desc">Sort by Name (Z-A)</option>
+        </select>
+        <input class="search form-control" placeholder="Search users..." style="width: auto;">
+    </div>
+
+    <div class="user-list">
+        <ul class="list-group list">
+            <% users.forEach((user, index) => { %>
+                <li class="list-group-item" style="border-radius: 10px;">
+                    <span class="name">
+                        <i class="fas fa-user-circle"></i> 
+                        <%= user.first_name %> <%= user.last_name %>
+                    </span>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+
+    <ul class="pagination"></ul>
+</div>
+
+<script>
+    var options = {
+        valueNames: ['name'],
+        page: 10,
+        pagination: true
+    };
+    
+    var userList = new List('user-list-container', options);
+
+    document.getElementById('sort-dropdown').addEventListener('change', function() {
+        var order = this.value;
+        userList.sort('name', { order: order });
+    });
+</script>
