@@ -259,3 +259,18 @@ position: relative;
 .cart-icon:hover {
     background-color: #0056b3; /* Darker shade on hover */
 }
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 1rem); /* Adjust for any spacing you want from the top */
+}
+
+.modal-content {
+    margin: auto; /* Centers the modal content */
+}
+.custom-header .fas.fa-user-circle {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 15px;
+}

@@ -1,0 +1,20 @@
+<header class="custom-header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="/" class="navbar-brand">AFGP</a>
+            <div>
+                <a href="/" class="nav-link d-inline-block">Home</a>
+                <a href="/shop" class="nav-link d-inline-block">Shop</a>
+                <a href="/about" class="nav-link d-inline-block">About</a>
+            </div>
+            <div id="header-right" class="d-flex align-items-center">
+                <% if (!user) { %>
+                    <button type="button" class="btn btn-login btn-primary" id="loginBtn">Login</button>
+                <% } else { %>
+                        <i class="fas fa-user-circle"></i>  
+                        <a href="/logout" class="btn btn-secondary ms-5">Logout</a>
+                <% } %>
+            </div>
+        </nav>
+    </div>
+</header>
